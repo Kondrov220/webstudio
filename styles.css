@@ -77,7 +77,7 @@ body {
 }
 
 .header-line {
-  border: #ECECEC solid 2px;
+  border: 1px solid #ececec;
   width: 100%;
   margin-top: 30px;
 }
