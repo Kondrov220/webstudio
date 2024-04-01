@@ -44,7 +44,7 @@ body {
 .header-links {
   display: flex;
   margin-left: 93px ;
-  margin-right: 344px ;
+  margin-right: 315px ;
   gap: 50px;
 }
 
@@ -72,9 +72,7 @@ body {
   letter-spacing: 0.28px;
 }
 
-.header-contact:hover {
-  color: var(--acxent-color);
-}
+
 
 .header-line {
   border: 1px solid #ececec;
@@ -430,4 +428,57 @@ letter-spacing: 0.48px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.mail {
+  width: 16px;
+height: 12px;
+flex-shrink: 0;
+}
+
+.smartphone {
+width: 10px;
+height: 16px;
+flex-shrink: 0;
+}
+
+.header-contacte:hover .header-contact{
+  color: var(--acxent-color);
+}
+
+.header-contacte:hover .mail{
+  fill: var(--acxent-color);
+}
+
+.header-contacte:hover .smartphone{
+  fill: var(--acxent-color);
+}
+
+.team-icon {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+fill: var(--mini-text-color);
+}
+
+.team-i {
+  padding: 12px;
+  width: 44px;
+height: 44px;
+border-radius:50%;
+}
+
+.team-i:hover {
+  background-color: var(--acxent-color);
+}
+
+.team-i:hover .team-icon{
+  fill: var(--title-color);
+}
+
+.team-lists {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  justify-content: center;
 }
