@@ -241,6 +241,7 @@ body {
   gap: 30px;
 }
 
+
 .work-bg {
   width: 370px;
 height: 70px;
@@ -250,7 +251,7 @@ padding: 27px 0 ;
 position: absolute;
 top: 224px;
 }
-
+ 
 .work-item {
   position: relative;
   
