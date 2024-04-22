@@ -56,7 +56,7 @@
               Ефективні рішення для вашого бізнесу
             </h2>
           </div>
-          <button class="effective-button" type="button">
+          <button class="effective-button btn-open" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -379,31 +379,48 @@
             </li>
           </ul>
         </div>
+        <div class="footer-box2">
+          <h2 class="footer-minititel" >Підпишіться на розсилку</h2>
+          <form class="footer-form" action="">
+            <input class="footer-input" type="text" placeholder="E-mail">
+            <button class="footer-button">
+              Підписатися
+              <svg class="footer-icon">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-  </body>
-  <div class="backdrop">
-    <div class="mod">
-      <button class="mod-border">
-        <svg class="mod-icon">
-        <use href="./img/symbol-defs.svg#icon-cross" ></use>
-      </svg>
-      </button>
-      <h2 class="mod-title">Залиште свої дані, ми вам передзвонимо</h2>
-      <p class="mod-text">Ім'я</p>
-      <input class="mod-input" type="text" >
-      <p class="mod-text">Телефон</p>
-      <input class="mod-input" type="tel" >
-      <p class="mod-text">Пошта</p>
-      <input class="mod-input" type="email" >
-      <p class="mod-text">Коментар</p>
-      <input class="mod-inpute" type="text" >
-      <div class="mod-boxe">
-      <input class="mod-box" type="checkbox">
-      <p class="mod-texte">Погоджуюся з розсилкою та приймаю </p>
-      <a class="mod-link" href="">Умови договору</a>
-      </div> 
-    <button class="mod-button">Відправити</button>
+    <div data-modal class="backdrop is-hidden">
+      <div class="mod " >
+        <button class="mod-border" data-modal-close>
+          <svg class="mod-icon">
+          <use href="./img/symbol-defs.svg#icon-cross"></use>
+        </svg>
+        </button>
+        <h2 class="mod-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="mod-boxs">
+          
+        <p class="mod-text">Ім'я</p>
+        <input class="mod-input" type="text" >
+        <p class="mod-text">Телефон</p>
+        <input class="mod-input" type="tel" >
+        <p class="mod-text">Пошта</p>
+        <input class="mod-input" type="email" >
+        <p class="mod-text">Коментар</p>
+        <input class="mod-inpute" type="text" placeholder="Введіть текст">
+        <div class="mod-boxe">
+        <input class="mod-box" type="checkbox">
+        <p class="mod-texte">Погоджуюся з розсилкою та приймаю </p>
+        <a class="mod-link" href="">Умови договору</a>
+        </div> 
+        </div>
+      <button class="mod-button">Відправити</button>
+      </div>
     </div>
-  </div>
+
+  </body>
+  <script src="./js/modal.js"></script>
 </html>
