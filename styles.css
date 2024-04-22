@@ -650,3 +650,103 @@ background-color:rgba(255, 255, 255, 0.10);
   display: flex;
   flex-direction: column;
 }
+
+
+.backdrop{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.20);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mod {
+  padding: 40px;
+  position: relative;
+  margin: auto;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.mod-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.mod-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.10) ;
+  border-radius: 50px;
+  background:  #fff;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.mod-title {
+margin: auto;
+margin-bottom: 2px;
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.6px;
+width: 448px;
+
+}
+
+.mod-text {
+  width: 41px;
+  color: #757575;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+margin-top: 10px;
+margin-bottom: 4px;
+}
+
+.mod-input {
+  width: 448px;
+height: 40px;
+border-radius: 4px;
+border: 1px solid rgba(33, 33, 33, 0.20);
+}
+
+.mod-inpute {
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  margin-bottom: 20px;
+}
+
+.mod-link {
+  color: #2196F3;
+  text-decoration-line: underline;
+}
+
+.mod-boxe {
+  display: flex;
+}
+
+.mod-box {
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+}
