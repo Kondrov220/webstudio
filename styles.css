@@ -675,7 +675,7 @@ body {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.mod-icon {
+.mod-icone {
   width: 18px;
   height: 18px;
 }
@@ -707,6 +707,10 @@ body {
   width: 448px;
 }
 
+.mod-item {
+  position: relative;
+}
+
 .mod-text {
   width: 41px;
   color: #757575;
@@ -725,18 +729,24 @@ body {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
 }
 
-.mod-input:nth-child(2) {
-  background: url(./img/persone.png) no-repeat 18px;
+.mod-item:hover .mod-input{
+  border: 1px solid #2196F3;
 }
 
-.mod-input:nth-child(4) {
-  background: url(./img/phone.png) no-repeat 18px;
+.mod-item:hover .mod-icon{
+  fill: #2196F3;
 }
 
-.mod-input:nth-child(6) {
-  background: url(./img/email.png) no-repeat 18px;
+.mod-icon {
+  width: 18px;
+height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 29px;
+  bottom: 11px;
 }
 
 .mod-inpute {
@@ -748,6 +758,10 @@ body {
   margin-bottom: 20px;
 }
 
+.mod-inpute:hover {
+  border: 1px solid #2196F3;
+}
+
 .mod-link {
   color: #2196f3;
   text-decoration-line: underline;
@@ -757,7 +771,7 @@ body {
   display: flex;
 }
 
-.mod-box {
+.mod-box{
   margin-right: 10px;
   width: 16px;
   height: 15px;

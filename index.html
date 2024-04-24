@@ -383,7 +383,7 @@
           <h2 class="footer-minititel" >Підпишіться на розсилку</h2>
           <form class="footer-form" action="">
             <input class="footer-input" type="text" placeholder="E-mail">
-            <button class="footer-button">
+            <button class="footer-button" type="button">
               Підписатися
               <svg class="footer-icon">
                 <use href="./img/symbol-defs.svg#icon-send"></use>
@@ -395,29 +395,46 @@
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="mod " >
-        <button class="mod-border" data-modal-close>
-          <svg class="mod-icon">
+        <button class="mod-border" type="button" data-modal-close>
+          <svg class="mod-icone">
           <use href="./img/symbol-defs.svg#icon-cross"></use>
         </svg>
         </button>
         <h2 class="mod-title">Залиште свої дані, ми вам передзвонимо</h2>
         <div class="mod-boxs">
-          
-        <p class="mod-text">Ім'я</p>
+        <ul class="mod-list">
+          <li class="mod-item"> <p class="mod-text">Ім'я</p>
         <input class="mod-input" type="text" >
-        <p class="mod-text">Телефон</p>
+        <svg class="mod-icon">
+          <use href="./img/symbol-defs.svg#icon-person"></use>
+        </svg></li>
+          <li class="mod-item"> <p class="mod-text">Телефон</p>
         <input class="mod-input" type="tel" >
-        <p class="mod-text">Пошта</p>
+        <svg class="mod-icon">
+          <use href="./img/symbol-defs.svg#icon-phone"></use>
+        </svg></li>
+          <li class="mod-item"> <p class="mod-text">Пошта</p>
         <input class="mod-input" type="email" >
+        <svg class="mod-icon">
+          <use href="./img/symbol-defs.svg#icon-email"></use>
+        </svg></li>
+        </ul>  
+       
+       
+       
         <p class="mod-text">Коментар</p>
         <input class="mod-inpute" type="text" placeholder="Введіть текст">
         <div class="mod-boxe">
-        <input class="mod-box" type="checkbox">
+          <label for="mod-lable">
+            <input class="mod-box" type="checkbox">
+        <span class="mod-checkmark"></span>
+      </label>
+        
         <p class="mod-texte">Погоджуюся з розсилкою та приймаю </p>
         <a class="mod-link" href="">Умови договору</a>
         </div> 
         </div>
-      <button class="mod-button">Відправити</button>
+      <button class="mod-button" type="button">Відправити</button>
       </div>
     </div>
 
