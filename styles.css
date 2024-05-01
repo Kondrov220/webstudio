@@ -69,7 +69,18 @@ body {
 
 .header-activ::after {
   content: "";
-  width: 78px;
+  width: 42px;
+height: 4px;
+border-radius: 2px;
+background: #2196F3;
+display: block;
+position: absolute;
+top: 44px;
+}
+
+.header-active::after {
+  content: "";
+  width: 70px;
 height: 4px;
 border-radius: 2px;
 background: #2196F3;
