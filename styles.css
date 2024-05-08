@@ -70,6 +70,7 @@ body {
   color: var(--acxent-color);
 }
 
+
 .header-activ::after {
   content: "";
   width: 42px;
@@ -79,6 +80,10 @@ background: #2196F3;
 display: block;
 position: absolute;
 top: 44px;
+}
+
+.header-activ::after:hover {
+transform: translate(2,3);
 }
 
 .header-active::after {
