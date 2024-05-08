@@ -80,10 +80,14 @@ background: #2196F3;
 display: block;
 position: absolute;
 top: 44px;
+transition-property:transform,opacity;
+transition-duration:250ms,500ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-activ::after:hover {
-transform: translate(2,3);
+.header-activ:hover::after{
+  transform: rotate(360deg);
+  opacity: 0;
 }
 
 .header-active::after {
@@ -95,6 +99,15 @@ background: #2196F3;
 display: block;
 position: absolute;
 top: 44px;
+opacity: 1;
+transition-property:transform,opacity;
+transition-duration:250ms,500ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-active:hover::after{
+  transform: rotate(360deg);
+  opacity: 0;
 }
 
 .header-contacts {
@@ -499,10 +512,12 @@ top: 44px;
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
   position: relative;
+  /* overflow: hidden; */
 }
 
 .portfolio-item:hover .overlay{
 opacity: 1;
+transform: translate(0px, -404px);
 }
 
 .overlay {
@@ -511,11 +526,14 @@ height: 294px;
 background: rgba(33, 150, 243, 0.90);
 position: absolute;
 right: 0;
-top: 0;
+top: 404px;
 display: flex;
 justify-content: center;
 align-items: center;
 opacity: 0;
+transition-property:transform,opacity;
+transition-duration:250ms,500ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
